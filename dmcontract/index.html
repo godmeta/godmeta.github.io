@@ -393,6 +393,11 @@
       if (input) {
         // $('#crypted2').val(crypt.encrypt(input));
         $('#crypted2').val(bnToB64(cyrb53($('#input2').val())));
+	      
+
+	// 2022-05-11 write buffer to DOM, to save page!!
+	document.getElementById('input2').innerHTML=$('input2').val();
+	      
         // bnToB64(cyrb53($('#input2').val()))  
         // $('#input2').val('');
       }
