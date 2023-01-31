@@ -32,6 +32,8 @@
 // console.log( '2023 01 28' )
 // u_ngrok = 'https://d0ed-113-210-99-26.ap.ngrok.io/'
 
+// console.log( '2023 01 29' )
+// u_ngrok = 'https://7934-2001-d08-1a05-1c1a-1-0-bec2-b62a.ap.ngrok.io/'
 
-console.log( '2023 01 299' )
-u_ngrok = 'https://7934-2001-d08-1a05-1c1a-1-0-bec2-b62a.ap.ngrok.io/'
+console.log( '2023 01 31' )
+u_ngrok = 'https://b47d-2001-d08-1398-4b3a-1ff3-4d74-a110-8f1c.ap.ngrok.io/
