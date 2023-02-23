@@ -31,6 +31,8 @@ April 2021 1230 ===
       
       // window.location = u_ngrok +"/dmeta/dmeta.php?nn="+nn
       
+      h = u_wl.split('?')[1]
+      
     param = window.location.toString().split('?')[1].split('&')
     
     // duid = window.location.toString().split('?')[1].split('-')
@@ -78,7 +80,7 @@ April 2021 1230 ===
     
     // window.location = u_ngrok +"/duniix/1lsd.php?tnn="+tnn+"&id="+id+"&nn="+nn
       
-    // window.location = u_ngrok +"/dmeta/dmeta.php?tnn="+tnn+"&id="+id+"&nn="+nn
+       window.location = u_ngrok +"/dmeta/dmeta.php?tnn="+tnn+"&id="+id+"&nn="+nn+"&h="+h
 
     }
     else // if (param.length == 0)
