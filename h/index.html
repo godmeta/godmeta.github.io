@@ -17,13 +17,17 @@ April 2021 1230 ===
     
     console.log( '  u_ngrok ', u_ngrok )
     
+    u_wl = window.location.toString()
+    
     console.log( window.location, ' token ', window.location.toString().split('?')[1] )
+    
+    
     
     if (typeof window.location.toString().split('?')[1] !== "undefined") {
     
       nn = window.location.toString().split('?')[1].split('=')[1]
       
-      console.log( '  22 nn ', nn,  window.location.toString() )
+      console.log( '  22 nn ', nn,  window.location.toString(), u_wl )
       
       // window.location = u_ngrok +"/dmeta/dmeta.php?nn="+nn
       
