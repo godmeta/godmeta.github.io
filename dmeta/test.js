@@ -38,5 +38,8 @@
 // console.log( '2023 01 31' )
 // u_ngrok = 'https://b47d-2001-d08-1398-4b3a-1ff3-4d74-a110-8f1c.ap.ngrok.io/'
 
-console.log( '2023 03 15' )
-u_ngrok = 'https://f1f4-2001-d08-229d-581c-5946-b693-ebac-3c1e.ap.ngrok.io/'
+// console.log( '2023 03 15' )
+// u_ngrok = 'https://f1f4-2001-d08-229d-581c-5946-b693-ebac-3c1e.ap.ngrok.io/'
+
+console.log( '2023 11 11' )
+u_ngrok = 'https://ba91-2001-d08-1ae1-3f86-1-0-ad8-cc7b.ngrok-free.app/'
