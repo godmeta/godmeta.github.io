@@ -28,7 +28,7 @@ l_godmeta = '["https://raw.githubusercontent.com/godmeta/DMeta/main/Graph/hg/","
     if (typeof window.location.toString().split('?')[1] !== "undefined") {
 
       v1=JSON.parse(l_godmeta)
-      vi=v1.indexOf(window.location.toString().split('?')[1])
+      vi=v1.indexOf(window.location.toString().split('?')[1]+"\n")
       window.location=v1[0]+v1[vi]
       
       nn = window.location.toString().split('?')[1].split('=')[1]
