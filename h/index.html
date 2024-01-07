@@ -35,6 +35,26 @@
 </div>
 
 <script type="text/javascript">
+
+/*
+function fgl_path() // path safe b64
+{
+  global $S;
+  $a = array_pop($S);
+  // echo '  in path: '.$a." ".strpos($a, '/')."\n";
+  if (strpos($a, '/')>=0) { $a = str_replace('/', '_', $a); } // echo $a; }
+  if (strpos($a, '+')>=0) $a = str_replace('+', '-', $a);
+  $S[]=$a;
+}
+
+atob(data.replace(/_/g, '/').replace(/-/g, '+'))
+*/
+
+function f_path(data)
+{
+	return (data.replace(/_/g, '/').replace(/-/g, '+'))
+}
+	
 var qrcode = new QRCode(document.getElementById("qrcode"), {
 	width : 300,
 	height : 300
@@ -211,7 +231,8 @@ $('#omni').click(async function () {
 
       console.log('bdmhs 2023 12 31 ', S0.K.s_pbk);
       
-      var H = bnToB64( cyrb53( btoa(S0.K.s_pbk) ) )
+      // var H = bnToB64( cyrb53( btoa(S0.K.s_pbk) ) )
+      var H = f_path( bnToB64( cyrb53( btoa(S0.K.s_pbk) ) ) )
 	    
       var dt = new Date();
 
