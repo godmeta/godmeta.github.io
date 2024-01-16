@@ -386,6 +386,28 @@ f('pem file:')
 f('pem load:')
 
 // document.getElementsByTagName('div')[1].append(S[5]);
+
+function waitUntilElementPresent(cssLocator, timeoutInSeconds) {
+    var currentTime = new Date().getTime();
+    var endTime = currentTime + timeoutInSeconds * 1000;
+    var checkExist = setInterval(function () {
+        if (document.querySelectorAll(cssLocator).length) {  console.log(document.querySelectorAll(cssLocator))
+            clearInterval(checkExist);
+            document.querySelectorAll(cssLocator)[0].style.display='none'
+            document.querySelectorAll(cssLocator)[1].style.display='none'
+            return;
+        } else if (endTime < new Date().getTime()) {
+            clearInterval(checkExist);
+            console.log('not found in specified time.');
+            return;
+        } else {
+            console.log('waiting for element to be present…');
+        } 
+    }, 100); 
+}
+waitUntilElementPresent('div.chat-popup',5)
+
+
 </script>
 
 <!--
